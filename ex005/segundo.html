@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 2.0</title>
+</head>
+<body>
+
+<div id="primeiro">PRIMEIRO</div>
+<div class="segundo">SEGUNDO</div>
+<div name="terceiro">TERCEIRO</div>
+<div>QUARTO</div>
+<div id="quinto">QUINTO</div>
+<div class="sexto">SEXTO</div>
+
+
+
+
+<script>
+    var corpo = window.document.body
+    corpo.style.backgroundColor = 'black'
+    corpo.style.color = 'white'
+    corpo.style.font = '25pt arial'
+
+    var d1 = window.document.querySelector('div#primeiro')
+
+    d1.style.color = 'red'
+    d1.innerHTML = 'SÃO PAULO'
+
+    var d2 = window.document.querySelectorAll('div.segundo')[0]
+
+    d2.style.color = 'green'
+    d2.innerHTML = 'É O MELHOR'
+
+    var d3 = window.document.getElementsByName('terceiro')[0]
+
+
+    d3.style.color = 'blue'
+    d3.innerText = 'TIME'
+
+    var d4 = window.document.getElementsByTagName('div')[3]
+
+    d4.style.color = 'gray'
+    d4.innerText = 'DO MUNDO'
+
+
+    var d5 = window.document.getElementById('quinto')
+
+    d5.style.color = 'yellow'
+    d5.innerText = 'RESTO'
+
+    var d6 = window.document.getElementsByClassName('sexto')[0]
+
+    d6.style.color = 'lightblue'
+    d6.innerText = 'É RESTO'
+
+    
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

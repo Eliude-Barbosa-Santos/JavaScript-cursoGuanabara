@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-JavaScript.256 (1).png" type="image/x-icon">
+    <title>EVENTOS</title>
+    <style>
+        div#area {
+            font: 25pt arial;
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" >INTERAJA</div>
+
+    <script>
+        var d = window.document.getElementById('area')
+
+        function entrar() {
+            d.style.backgroundColor = 'green'
+            d.style.color = 'black'
+            d.innerText = 'O que?'
+        }
+
+        function sair() {
+            d.style.backgroundColor = 'black'
+            d.style.color = 'white'
+            d.innerText = 'INTERAJA'
+        }
+
+        function clicar() {
+            d.style.backgroundColor = 'yellow'
+            d.style.color = 'blue'
+            d.innerText = 'NOIS'
+        }
+    </script>
+</body>
+</html>

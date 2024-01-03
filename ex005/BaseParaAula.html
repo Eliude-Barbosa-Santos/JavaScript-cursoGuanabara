@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="playstation-icon.png" type="image/x-icon">
+    <title>DOm 2.0</title>
+</head>
+<body>
+    <div id="primeiro">Primeiro</div>
+    <div class="segundo">Segundo</div>
+    <div name="terceiro">Terceiro</div>
+    <div>Quarto</div>
+    <div id="quinto">Quinto</div>
+    <div class="sexto">Sexto</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        corpo.style.color = 'white'
+        corpo.style.font = '25pt arial'
+
+        var d1 = window.document.querySelector('div#primeiro')
+
+        d1.style.color = 'green'
+        d1.innerHTML = 'São Paulo'
+
+        var d2 = window.document.querySelectorAll('div.segundo')[0]
+
+        d2.style.color = 'yellow'
+        d2.innerHTML = 'é o melhor'
+
+        var d3 = window.document.getElementsByName('terceiro')[0]
+
+        d3.style.color = 'gray'
+        d3.innerText = 'Time'
+
+        var d4 = window.document.getElementsByTagName('div')[3]
+
+        d4.style.color = 'blue'
+        d4.innerText = 'que existe'
+
+        var d5 = window.document.getElementById('quinto')
+
+        d5.style.color = 'red'
+        d5.innerText = 'no mundo'
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

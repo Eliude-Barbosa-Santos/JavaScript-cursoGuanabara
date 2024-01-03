@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Star-Wars-The-Old-Republic-8-icon.png" type="image/x-icon">
+    <title>Somando Numeros</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: 20pt arial;
+        }
+
+        div#quadro{
+            width: 480px;
+            background-color: aqua;
+            color: black;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input{
+            font: 20pt arial;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Numeros</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="SOMAR" onclick="clicar()">
+    <div id="quadro">RESULTADO</div>
+
+    
+
+    <script>
+        function clicar() {
+            var txt1 = window.document.getElementById('txtn1')
+            var n1 = Number(txt1.value)
+            
+            var txt2 = window.document.getElementById('txtn2')
+            var n2 = Number(txt2.value)
+
+            var s = n1 + n2
+
+            var d = window.document.getElementById('quadro')
+
+            d.innerText = `A soma é ${s}`
+            
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-image: url(../imagem/fundo.jpg);
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;*/
+    color: white;
+    font-size: 20pt;
+    /*height: 100vh;*/
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background-color: rgb(184, 178, 178);
+    color: black;
+    width: 460px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input#botao{
+    font-size: 18pt;
+    margin-left: 160px;
+    width: 150px;
+}
+
+input{
+    font-size: 18pt;
+}
+
+input#txtf{
+    margin-left: 18px;
+}

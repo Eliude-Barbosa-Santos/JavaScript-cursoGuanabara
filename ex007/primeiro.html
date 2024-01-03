@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Sao-Paulo-icon.png" type="image/x-icon">
+    <title>Somando Valores</title>
+
+    <style>
+        input{
+            font: 15pt arial;
+            width: 120px;
+        }
+
+        div#quadro{
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+            font: 20pt arial;
+            width: 385px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn1" id="txtn2">
+    <input type="button" value="SOMAR" onclick="clicar()">
+    <div id="quadro">RESULTADO</div>
+
+    <script>
+
+        function clicar() {
+            var numero1 = window.document.getElementById('txtn1')
+
+            var n1 = Number(numero1.value)
+        
+
+            var numero2 = window.document.getElementById('txtn2')
+
+            var n2 = Number(numero2.value)
+
+            var d = window.document.getElementById('quadro')
+
+            var soma = n1 + n2
+
+            d.innerText = `A soma é ${soma}`
+
+
+
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

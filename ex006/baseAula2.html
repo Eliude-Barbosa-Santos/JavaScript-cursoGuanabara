@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Liverpool-FC-icon.png" type="image/x-icon">
+    <title>EVENTOS</title>
+
+    <style>
+        div#quadro{
+            font: 25pt arial;
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadro"> DIA &#x1F31E</div>
+
+    <script>
+        var d = window.document.getElementById('quadro')
+
+        var corpo = window.document.body
+
+        d.addEventListener('mouseenter', entrar)
+        d.addEventListener('mouseout', sair)
+        d.addEventListener('click', clicar)
+
+        function entrar() {
+            d.style.backgroundColor = 'gray'
+            d.innerHTML = 'TARDE &#x26C5;'       
+        }
+
+        function sair() {
+            d.style.backgroundColor = 'lightblue'
+            d.innerHTML = 'DIA &#x1F31E'
+            window.document.body.style.backgroundColor = 'white'
+        }
+
+        function clicar() {
+            d.style.backgroundColor = "Black"
+            d.innerHTML = 'NOITE &#x1F31B;'
+            d.style.color = 'white'
+            window.document.body.style.backgroundColor = 'black'
+        }
+
+        
+
+    
+    </script>
+    
+</body>
+</html>

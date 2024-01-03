@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Bird-Owl-icon.png" type="image/x-icon">
+    <title>Cidadania</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: 18pt arial;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        input{
+            font: 20pt arial;
+        }
+
+        div{
+            background-color: white;
+            color: black;
+            text-align: center;
+            font: 30pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cidadania</h1>
+    <hr>
+    <p>De que pais você é?</p>
+
+    <input type="text" name="texto" id="texto">
+
+    <p><input type="button" value="VERIFICAR" onclick="clicar()"></p>
+
+    <div>Cidadania</div>
+
+    <script>
+
+        function clicar() {
+            var caixa = window.document.querySelector("input#texto")
+
+            var d = window.document.querySelector('div')
+
+           if (caixa.value == 'Brasil'){
+                d.innerHTML = 'Você é um cidadão Brasileiro'
+                d.style.backgroundColor = 'yellow'
+                window.document.body.style.backgroundColor = "green"
+           } else {
+                d.style.backgroundColor = 'blue'
+                d.innerHTML = 'Você é estrangeiro'
+                window.document.body.style.backgroundColor = 'gray'
+           }
+
+
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

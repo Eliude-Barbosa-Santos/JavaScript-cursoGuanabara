@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="playstation-icon.png" type="image/x-icon">
+    <title>DOM</title>
+    
+    
+
+</head>
+<body>
+    <h1>TITULO</h1>
+    <p name="p1">Primeiro Paragrafo</p>
+    <p id="paragrafo">Segundo paragrafo</p>
+    <div class="divi">primeira DIV</div>
+    
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.backgroundColor = 'black'
+        corpo.style.color = 'white'
+        corpo.style.font = 'normal 25pt arial'
+
+        var p = window.document.getElementById('paragrafo')
+        p.style.color = 'yellow'
+
+        var p2 = window.document.getElementsByName('p1')[0]
+        p2.style.color = 'green'
+
+        var d = window.document.getElementsByClassName('divi')[0]
+        d.style.color = 'blue'
+
+        var t = window.document.getElementsByTagName('h1')[0]
+        t.style.color = 'red'
+</script>
+</body>
+</html>

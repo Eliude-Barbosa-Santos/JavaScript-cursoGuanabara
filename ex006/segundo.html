@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brasil-icon.png" type="image/x-icon">
+    <title>EVENTOS</title>
+
+    <style>
+        div#quadro{
+            font: 25pt arial;
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            margin-left: 90px;
+            margin-top: 180px;
+            text-align: center;
+            line-height: 300px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="quadro">DIA &#x1F31E;</div>
+
+    <script>
+         var d = window.document.getElementById('quadro')
+
+         d.addEventListener('click', clicar)
+         d.addEventListener('mouseout', sair)
+         d.addEventListener('mouseenter', entrar)
+
+
+         function clicar() {
+            d.style.backgroundColor = 'gray'
+            d.innerHTML = "TARDE &#x26C5;"
+            d.style.color = 'black'
+            window.document.body.style.backgroundColor = 'white'
+         }
+
+         function sair() {
+            d.innerHTML = 'DIA &#x1F31E;'
+            d.style.backgroundColor = 'lightblue'
+            d.style.color = 'black'
+            window.document.body.style.backgroundColor = 'white'
+         }
+
+         function entrar() {
+            d.style.backgroundColor = 'black'
+            d.style.color = 'white'
+            d.innerHTML = 'Noite &#x1F31B;'
+            window.document.body.style.backgroundColor = 'black'
+         }
+
+
+    </script>
+</body>
+</html>
